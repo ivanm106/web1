@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="JS.js"></script>
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+    <h1>Калькулятор товаров</h1>
+
+
+    <div id="result"></div>
+    <form>
+        <input name="field1" type="text" pattern="^[1-9][0-9]*$" placeholder="Введите количество">
+        <select name="select1">
+            <option value="v1">Snickers</option>
+            <option value="v2">Baunti</option>
+        </select>
+        <button id="button1" onclick="return click1();">OK</button>
+    </form>
+<br> 
+<br> 
+<br> 
+
+
+
+    <div id="result2"></div>
+    <form id="calculator">
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" value="1" min="1">
+
+        <fieldset>
+            <legend>Тип услуги:</legend>
+            <label><input type="radio" name="serviceType" value="type1" checked> Тетрадь 12 стр</label>
+            <label><input type="radio" name="serviceType" value="type2"> Тетрадь 48 стр</label>
+            <label><input type="radio" name="serviceType" value="type3"> Тетрадь 96</label>
+        </fieldset>
+
+        <div id="optionsContainer" style="display: none;">
+            <label for="options">Выберите опцию:</label>
+            <select id="options">
+                <option value="option1">В клетку</option>
+                <option value="option2">В линию</option>
+            </select>
+        </div>
+
+        <div id="checkboxContainer" style="display: none;">
+            <label><input type="checkbox" id="property"> Лучшее качество</label>
+        </div>
+
+        <h2>Итоговая стоимость: <span id="totalCost">0</span> руб.</h2>
+    </form>
+
+
+   
+</body>
+
+
+</html>
